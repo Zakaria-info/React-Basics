@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function TextForm(){
+export default function TextForm() {
   return (
     <div>
         <div className="mb-3">
-            <input className="input-text" id="inputGroup-sizing-sm">Small</input>
+            <input type="text" className="form-control" aria-label="Example input" aria-describedby="inputGroup-sizing-sm"/>
         </div>
     </div>
   )
