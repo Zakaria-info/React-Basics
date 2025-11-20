@@ -1,15 +1,71 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto; /* center the content */
-  padding: 20px;
+.main-background {
+  background-color: #111111; /* fallback color */
+  background-image: url('./bg-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
 }
 
-.main-background {
-  background-image: url('./bg-2.jpg');
-  background-size: cover;         /* makes image cover the whole div */
-  background-position: center;    /* center the image */
-  background-repeat: no-repeat;   /* prevent repeating */
-  height: 100vh;                  /* full viewport height */
+/* ===== TextForm specific styling ===== */
+.textform-container {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent bg so text is readable */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Heading in TextForm */
+.textform-container h1 {
+  color: #ffeb3b; /* bright yellow for heading */
+  margin-bottom: 15px;
+}
+
+/* Textarea styling */
+.textform-container textarea {
+  background-color: rgba(255, 255, 255, 0.1); /* slightly transparent white */
+  color: #ffffff; /* text color */
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px;
   width: 100%;
+  resize: none; /* optional: remove resize handle */
+}
+
+/* Buttons */
+.textform-container .btn {
+  background-color: #2196f3; /* blue button */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.textform-container .btn:hover {
+  background-color: #0b7dda;
+}
+
+/* Text summary and preview */
+.text-summary {
+  color: #121211; /* white text for summary & preview */
+  margin-top: 20px;
+}
+
+
+.text-summary h2 {
+  color: #bbf646; /* headings in yellow */
+}
+.text-summary p {
+  display: inline-block;
+  background-color: rgba(220, 228, 220, 0.3); /* example bg with transparency */
+  padding: 4px 8px;            /* some space around text */
+  border-radius: 5px;           /* optional rounded corners */
+  margin-bottom: 8px;
 }
 
